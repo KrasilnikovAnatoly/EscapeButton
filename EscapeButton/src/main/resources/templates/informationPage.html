@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Координаты кнопки</title>
+    <style>
+        th, td {
+        width:100px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 12;
+        }
+        table {
+        width: 200px;
+        max-width: 200px;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+        </tr>
+        </thead>
+        <tbody>
+        {#for button in buttons}
+        <tr>
+            <td>{button.getX()}</td>
+            <td>{button.getY()}</td>
+        </tr>
+        {/for}
+        </tbody>
+    </table>
+</body>
+</html>
